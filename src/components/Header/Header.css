@@ -1,0 +1,52 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+  }
+  
+  nav h3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  .navItems {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navItems a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+  }
+
+@media screen and (max-width: 720px) {
+
+  nav h3 a {
+    font-size: 2rem;
+  }
+
+  .navItems a {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  nav h3 a {
+    font-size: 1.2rem;
+  }
+
+  .navItems a {
+    font-size: 1.2rem;
+  }
+}

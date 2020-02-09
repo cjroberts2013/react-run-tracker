@@ -1,0 +1,42 @@
+.headerImg {
+    background-image: url(./../../images/header-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headerText {
+    color: rgba(105, 255, 165, 0.82);
+    font-size: 20rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  
+@media screen and (max-width: 850px) {
+  .headerText {
+    font-size: 17rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .headerText {
+    font-size: 13rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .headerText {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .headerText {
+    font-size: 7rem;
+  }
+}
