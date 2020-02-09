@@ -12,6 +12,9 @@ class Running extends Component {
         super(props)
         this.addLog = this.addLog.bind(this)
 
+        this.app = firebase.initializeApp(DB_CONFIG);
+        this.db = this.app.database().ref().child('logs');
+
         // We are going to setup the React state of our component
         this.state = {
             logs: [
@@ -19,6 +22,10 @@ class Running extends Component {
                 // { id: 2, logType: 'Morning Run', logDate: '02/10/2020', logDistance: 7.8, logTime: 111, logPace: '7:43', logNotes: 'I felt really happy about it! This was a super good run.' }
             ],
         }
+    }
+
+    componentWillMount() {
+        const previousLogs = this.state.logs;
     }
 
     addLog(log) {
